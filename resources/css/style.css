@@ -10,3 +10,143 @@ html {
   --tertiary-color: #edeef7;
   font-size: 16px;
 }
+
+body {
+  background-color: var(--primary-color, #e4fbff);
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--secondary-color, #7868e6);
+}
+
+#main {
+  width: 95%;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  padding: 50px;
+}
+header h1 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+#img-div {
+  width: 95%;
+  padding: 3%;
+  border-radius: 20px;
+  background-color: white;
+  /* background-color: white; */
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+img {
+  max-width: 100%;
+  border-radius: 20px;
+  height: auto;
+  margin-bottom: 20px;
+}
+#img-caption {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-left: 30px;
+}
+#tribute-info {
+  width: 95%;
+  padding: 3%;
+  text-align: center;
+  margin: 0 auto;
+}
+h2 {
+  padding: 30px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit);
+}
+.item {
+  display: grid;
+  row-gap: 20px;
+  grid-template-areas:
+    "header header header header"
+    "years team goals apps"
+    "first second third fourth"
+    "fifth sixth seventh eigth"
+    "nineth tenth eleventh twelvth";
+}
+.head {
+  background-color: #7868e6;
+  color: #fff;
+  font-size: 1.4rem;
+  /* padding: 10px; */
+  grid-area: header;
+}
+.bold {
+  font-weight: bold;
+}
+.years {
+  grid-area: years;
+}
+.team {
+  grid-area: team;
+}
+.goals {
+  grid-area: goals;
+}
+.apps {
+  grid-area: apps;
+}
+.first {
+  grid-area: first;
+}
+.second {
+  grid-area: second;
+}
+.third {
+  grid-area: third;
+}
+.fourth {
+  grid-area: fourth;
+}
+.fifth {
+  grid-area: fifth;
+}
+.sixth {
+  grid-area: sixth;
+}
+.seventh {
+  grid-area: seventh;
+}
+.eigth {
+  grid-area: eigth;
+}
+.nineth {
+  grid-area: nineth;
+}
+.tenth {
+  grid-area: tenth;
+}
+.eleventh {
+  grid-area: eleventh;
+}
+.twelvth {
+  grid-area: twelvth;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  width: 100%;
+  background-color: #7868e6;
+  color: #fff;
+  text-align: center;
+}
+footer a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+footer a:hover {
+  color: var(--tertiary-color);
+}
